@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+
+/*---Media Queries --*/
+@media (max-width: 992px) {
+
+  }
+@media (max-width: 768px) {
+  
+}
+@media (max-width: 576px) {
+  
+}
+
+
+/*---Firefox Bug Fix --*/
+.carousel-item {
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+}
+/*--- Fixed Background Image --*/
+figure {
+  position: relative;
+  width: 100%;
+  height: 60%;
+  margin: 0!important;
+}
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/* Settings */
+.padding{
+  padding: 5% 5%;
+}
+.font-setting{
+  font-size: 16px;
+  font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.white-background{
+  background-color: white;
+}
+.yellow-background{
+  background-color: #fab95b;
+}
+.grey-background{
+  background-color:rgb(231, 231, 231)
+}
+/* Navigation Bar */
+.fa-bars{
+  font-size: 30px;
+}
+ul{
+  list-style: none;
+}
+.logo{
+  flex : none;
+  align-items: center;
+}
+.navbar{
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 20px;
+  color: white;
+}
+.nav-links-left{
+  display: flex;
+  margin-left: 20%;
+}
+.nav-links-left li{
+  margin: 0 20px;
+}
+.nav-links{
+  display: none;
+}
+
+.nav-links-right{
+  display: flex;
+  margin-left: 0%;
+  margin-right: 20%;
+}
+.nav-links-right li{
+  margin: 0 20px;
+}
+
+.active{
+  font-weight: 300;
+  color: white;
+}
+.nav-bar-font{
+  font-weight: 300;
+  color: rgb(160, 157, 157);
+}
+.menu-btn{
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  cursor: pointer;
+  display: none;
+}
+
+/* Header */
+header{
+  background-image: url(./hero-img.png);
+  background-position: bottom;
+  background-size: cover;
+}
+.header-contant{
+  font-size: 16px;
+  z-index: -2;
+}
+.padding-header{
+  padding: 5% 10%;
+}
+.header-heading{
+  color: white;
+  font-size: 3.8vw;
+}
+.header-para-one{
+  color:dimgray;
+  font-size: 1.8vw;
+}
+.header-para-two{
+  color: white;
+  font-size: 1.7vw;
+}
+.contact-me-btn{
+  background-color: #fab95b;
+  color: white;
+  border-radius: 30px;
+  font-size: 10px;
+  padding: 10px; 
+  border-style: none;
+}
+
+/* Services */
+.card-background{
+  background-color: white;
+}
+.circle{
+  background-color: #fab95b;
+  color: white;
+  margin-top: 10px;
+  margin-right: 30px;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  display: inline-block;
+  flex : 1 0 auto;
+}
+.icon-div{
+  padding: 30% 36%;
+  align-self: center;
+}
+.widgets-div {
+
+  display: flex;
+  align-self: center;
+  margin: 30px 30px;
+}
+/* About Me Bars */
+.progress {
+  height: 4px;
+}
+.progress-bar {
+  background-color: #fab95b;
+  color: #fab95b;
+  border-radius: 4px;
+}
+.test{
+  position: relative;
+}
+.percent{
+  position: absolute;
+  color: white;
+  background: #fab95b;
+  border-radius: 3px;
+  padding: 5px;
+}
+.percent:after{
+  bottom: 100%;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(255, 255, 255, 0);
+  border-bottom-color: #fab95b;
+  border-width: 5px;
+  margin-left: -5px;
+}
+.bar-one{
+  left: calc(89% - 18px);
+  top: 120%;
+}
+.bar-two{
+  left: calc(75% - 18px);
+  top: 120%;
+}
+.bar-three-four{
+  left: calc(94% - 18px);
+  top: 120%
+}
+
+/* What Clients Are Sayings */
+.sayings-block{
+  background-color:rgb(252, 186, 64);
+  text-align: center;
+  color: white;
+}
+.fa-minus{
+  font-size: 16px;
+}
+.sayings{
+  opacity: 0.6;
+}
+.dots-container{
+  text-align: center;
+}
+.dots-container span:not(:last-child){
+  opacity: 0.6;
+}
+.dot {
+  height: 6px;
+  width: 6px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 3px;
+}
+/* Blog Post Section */
+.text-align-center
+{
+  align-items: center;
+}
+.read-more{
+  color: darkorange;
+}
+
+/* Say Hello Section */
+.say-hello-color{
+  text-align: center;
+  color: white;
+}
+.text-line {
+  background-color: transparent;
+  color: #EEEEEE;
+  outline: none;
+  outline-style: none;
+  width: 100%;
+  outline-offset: 0;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: solid #EEEEEE 1px;
+  padding: 3px 10px;
+}
+.tl-remove{
+  border-bottom: none;
+}
+.input-dt {
+  border:0px;
+  float:left;
+  width:50%;
+  padding-right: 15px;
+}
+.input-dd {
+  border:0px;
+  float:left;
+  width:50%;
+  padding-left: 15px;
+}
+.send-message-button{
+  background-color: rgb(29, 29, 29);
+  color: white;
+  border-radius: 30px;
+  font-size: 10px;
+  padding: 10px; 
+  border-style: none;
+}
+
+/* Footer */
+.footer-font-color{
+  color: grey;
+}
+.footer-icon{
+  color: grey;
+  margin: 0px 8px;
+}
+
+
+::placeholder {
+  color: whitesmoke;
+}
+
+
+#fixed {
+  background-image: url('img/mac.png');
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+    padding: 1rem;
+}
+
+
+
+
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
+
+/* Mobile device */
+@media only screen and (max-width:1150px){
+  header{
+    background-image: url(./hero-img.png);
+    background-position: right;
+    background-size: cover;
+  }
+  .navbar{
+    padding: 0;
+    z-index: 2;
+  }
+  .logo{
+    position: absolute;
+    top: 30px;
+    margin-left: 30%;
+  }
+  .menu-btn{
+    display: block;
+    margin-right: 30%;
+  }
+  .nav-links-left{
+    display: none;
+  }
+  .nav-links-right{
+    display: none;
+  }
+  .nav-links{
+    position: relative;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100vh;
+    justify-content: center;
+    background-color: rgb(34, 52, 70);
+    margin-top: -900px;
+    
+  }
+  .contact-me-btn{
+    font-size: 20px;
+  }
+  .nav-links li{
+    margin: 30px auto;
+  }
+  .mobile-menu{
+    margin-top: 0px;
+  }
+  .padding-header{
+    padding: 5% 5px;
+  }
+  .header-heading{
+    font-size: 9vw;
+  }
+  .header-para-one{
+    font-size: 4.5vw;
+  }
+  .header-para-two{
+    font-size: 4.5vw;
+  }
+  .col-lg-6 {
+    max-width: 100%;
+ }
+}
